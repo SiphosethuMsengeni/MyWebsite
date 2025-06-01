@@ -7,7 +7,7 @@ public class Customer {
     private String firstName;
     private String lastName;
     private String email;
-    private String phoneNumber;
+    private String mobile;
     private long address;
 
     private Customer(Builder builder) {
@@ -15,7 +15,7 @@ public class Customer {
         this.firstName = builder.firstName;
         this.lastName = builder.lastName;
         this.email = builder.email;
-        this.phoneNumber = builder.phoneNumber;
+        this.mobile = builder.mobile;
         this.address = builder.address;
     }
 
@@ -35,8 +35,8 @@ public class Customer {
         return email;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getMobile() {
+        return mobile;
     }
 
     public long getAddress() {
@@ -63,7 +63,7 @@ public class Customer {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
+                ", mobile='" + mobile + '\'' +
                 ", address='" + address + '\'' +
                 '}';
     }
@@ -73,7 +73,7 @@ public class Customer {
         private String firstName;
         private String lastName;
         private String email;
-        private String phoneNumber;
+        private String mobile;
         private long address;
 
         public Builder setCustomerId(String customerId) {
@@ -96,8 +96,8 @@ public class Customer {
             return this;
         }
 
-        public Builder setPhoneNumber(String phoneNumber) {
-            this.phoneNumber = phoneNumber;
+        public Builder setMobile(String mobile) {
+            this.mobile = mobile;
             return this;
         }
 
