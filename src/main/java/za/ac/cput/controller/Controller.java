@@ -5,7 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import za.ac.cput.domain.Customer;
-import za.ac.cput.service.CustomerService;
+import za.ac.cput.service.ICustomerService;
 
 import java.util.List;
 import java.util.Set;
@@ -14,10 +14,10 @@ import java.util.Set;
 @RequestMapping("/api/customers")
 @CrossOrigin(origins = "*")
 public class Controller {
-    private final CustomerService customerService;
+    private final ICustomerService customerService;
 
     @Autowired
-    public Controller(CustomerService customerService) {
+    public Controller(ICustomerService customerService) {
         this.customerService = customerService;
     }
 
