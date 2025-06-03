@@ -13,11 +13,11 @@ import java.util.Set;
 @RestController
 @RequestMapping("/api/customers")
 @CrossOrigin(origins = "*")
-public class Controller {
+public class CustomerController {
     private final ICustomerService customerService;
 
     @Autowired
-    public Controller(ICustomerService customerService) {
+    public CustomerController(ICustomerService customerService) {
         this.customerService = customerService;
     }
 
