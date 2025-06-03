@@ -76,38 +76,21 @@ public class Customer {
         private String mobile;
         private long address;
 
-        public Builder setCustomerId(String customerId) {
+        public void setCustomerId(String customerId) {
             this.customerId = customerId;
-            return this;
         }
-
-        public Builder setFirstName(String firstName) {
-            this.firstName = firstName;
-            return this;
-        }
-
-        public Builder setLastName(String lastName) {
+        public void setLastName(String lastName) {
             this.lastName = lastName;
-            return this;
         }
-
-        public Builder setEmail(String email) {
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
+        public void setEmail(String email) {
             this.email = email;
-            return this;
         }
-
-        public Builder setMobile(String mobile) {
+        public void setMobile(String mobile) {
             this.mobile = mobile;
-            return this;
-        }
-
-        public Builder setAddress(long address) {
-            this.address = address;
-            return this;
-        }
-
-        public Customer build() {
-            return new Customer(this);
         }
     }
+
 }
